@@ -10,14 +10,6 @@ const databaseConfig = {
     rejectUnauthorized: false,
   },
 };
-//const connection = new Pool(databaseConfig);
-
-const connection = new Pool({
-  host: "Localhost",
-  port: 5432,
-  user: "postgres",
-  password: "2038",
-  database: "shortly",
-});
+const connection = new Pool(databaseConfig);
 
 export { connection };
